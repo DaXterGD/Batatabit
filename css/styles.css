@@ -25,7 +25,8 @@ html {
 body {
   font-family: "DM Sans", sans-serif;
   font-size: 1.6rem;
-  background-color: var(--off-white);
+  min-width: 320px;
+  background-color: var(--just-white);
 }
 
 header {
@@ -71,5 +72,25 @@ header > img {
 }
 
 .header__button {
+  display: block;
+  position: absolute;
+  top: 260px;
+  left: calc(50% - 118px);
+  width: 229px;
+  padding: 15px;
+  margin-top: 35px;
   text-decoration: none;
+  font-size: 1.4rem;
+  box-shadow: 0px 4px 10px #00000040;
+  border-radius: 5px;
+  background-color: var(--off-white);
+  color: inherit;
+}
+
+.header__button span {
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  margin-left: 10px;
+  background-image: url("../assets/icons/down-arrow.svg");
 }
