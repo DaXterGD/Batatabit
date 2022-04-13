@@ -94,3 +94,25 @@ header > img {
   margin-left: 10px;
   background-image: url("../assets/icons/down-arrow.svg");
 }
+
+@media (hover: hover) {
+  .header__button:hover {
+    background-color: var(--soft-orange);
+  }
+}
+
+main {
+  background-color: var(--off-white);
+}
+
+.main__exchange-section {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.exchange-section__text {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
