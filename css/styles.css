@@ -24,6 +24,38 @@ html {
 
 body {
   font-family: "DM Sans", sans-serif;
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
   background-color: var(--off-white);
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 320px;
+  text-align: center;
+  background-image: linear-gradient(
+    to right top,
+    #f7931a,
+    #b27d18,
+    #78621f,
+    #4a4423,
+    #262623
+  );
+}
+
+header > img {
+  width: 150px;
+  height: 24px;
+}
+
+.header__title-container {
+  width: 90%;
+  height: 218px;
+  min-width: 288px;
+  max-width: 900px;
+  margin-top: 40px;
 }
