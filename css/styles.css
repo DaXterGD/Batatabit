@@ -115,7 +115,7 @@ main {
   width: 200px;
   height: 200px;
   margin: 0 auto 50px;
-  background-image: url('../assets/img/Bitcoin.svg');
+  background-image: url("../assets/img/Bitcoin.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100% cover;
@@ -150,6 +150,34 @@ main {
 }
 
 .exchange-section__currency-table table,
-.currency-table__title {
+.exchange-section__currency-table .title {
   text-align: left;
+  margin-bottom: 15px;
+}
+
+.exchange-section__currency-table .title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: var(--bitcoin-orange);
+}
+
+.exchange-section__currency-table {
+  width: 70%;
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+
+.exchange-section__currency-table table {
+  width: 100%;
+  height: 360px;
+  background-color: var(--just-white);
+}
+
+.exchange-section__currency-table td {
+  width: 50%;
+  line-height: 1.9rem;
+  border: 1px solid var(--grey);
+  color: var(--grey)
 }
