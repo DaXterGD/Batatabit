@@ -8,6 +8,7 @@
   --grey: #bababa;
   --off-white: #faf8f7;
   --just-white: #fff;
+  --font-grey: #757575;
 }
 
 * {
@@ -137,16 +138,23 @@ main {
   margin-bottom: 30px;
   font-size: 1.4rem;
   line-height: 1.8rem;
-  color: #757575;
+  color: var(--font-grey);
 }
 
 .exchange-section__currency-table span {
   display: inline-block;
   width: 13px;
   height: 10px;
-  margin-left: 10px;
-  background-image: url("../assets/icons/trending-down.svg");
+  margin-left: 20px;
   background-repeat: no-repeat;
+}
+
+.exchange-section__currency-table .down {
+  background-image: url("../assets/icons/trending-down.svg");
+}
+
+.exchange-section__currency-table .up {
+  background-image: url("../assets/icons/trending-up.svg");
 }
 
 .exchange-section__currency-table table,
@@ -156,6 +164,7 @@ main {
 }
 
 .exchange-section__currency-table .title {
+  margin-left: 1.5rem;
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2.3rem;
@@ -171,13 +180,34 @@ main {
 
 .exchange-section__currency-table table {
   width: 100%;
-  height: 360px;
-  background-color: var(--just-white);
+  height: 170px;
 }
 
 .exchange-section__currency-table td {
   width: 50%;
-  line-height: 1.9rem;
-  border: 1px solid var(--grey);
-  color: var(--grey)
+  padding-left: 1.5rem;
+  background-color: var(--just-white);
+  color: var(--grey);
+}
+
+.exchange-section__currency-table .table__top-left {
+  border-top-left-radius: 15px;
+}
+
+.exchange-section__currency-table .table__top-right {
+  border-top-right-radius: 15px;
+}
+
+.exchange-section__currency-table .table__bottom-left {
+  border-bottom-left-radius: 15px;
+}
+
+.exchange-section__currency-table .table__bottom-right {
+  border-bottom-right-radius: 15px;
+}
+
+.exchange-section__currency-table .table__right {
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: var(--font-grey);
 }
