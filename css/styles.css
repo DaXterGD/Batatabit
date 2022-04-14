@@ -158,56 +158,97 @@ main {
 }
 
 .exchange-section__currency-table table,
+.exchange-section__commissions-table table,
+.exchange-section__commissions-table .title,
 .exchange-section__currency-table .title {
   text-align: left;
   margin-bottom: 15px;
 }
 
-.exchange-section__currency-table .title {
-  margin-left: 1.5rem;
+.exchange-section__currency-table .title,
+.exchange-section__commissions-table .title {
+  margin-left: 15px;
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2.3rem;
+}
+
+.exchange-section__currency-table .title {
   color: var(--bitcoin-orange);
 }
 
-.exchange-section__currency-table {
+.exchange-section__commissions-table .title {
+  color: var(--secondary-blue);
+}
+
+.exchange-section__currency-table,
+.exchange-section__commissions-table {
   width: 70%;
   max-width: 500px;
   margin: 0 auto;
   font-family: "Inter", sans-serif;
 }
 
-.exchange-section__currency-table table {
+.exchange-section__currency-table table,
+.exchange-section__commissions-table table {
   width: 100%;
   height: 170px;
 }
 
-.exchange-section__currency-table td {
+.exchange-section__currency-table td,
+.exchange-section__commissions-table td {
   width: 50%;
-  padding-left: 1.5rem;
+  padding-left: 15px;
   background-color: var(--just-white);
   color: var(--grey);
 }
 
-.exchange-section__currency-table .table__top-left {
+.exchange-section__currency-table .table__top-left,
+.exchange-section__commissions-table .table__top-left {
   border-top-left-radius: 15px;
 }
 
-.exchange-section__currency-table .table__top-right {
+.exchange-section__currency-table .table__top-right,
+.exchange-section__commissions-table .table__top-right {
   border-top-right-radius: 15px;
 }
 
-.exchange-section__currency-table .table__bottom-left {
+.exchange-section__currency-table .table__bottom-left,
+.exchange-section__commissions-table .table__bottom-left {
   border-bottom-left-radius: 15px;
 }
 
-.exchange-section__currency-table .table__bottom-right {
+.exchange-section__currency-table .table__bottom-right,
+.exchange-section__commissions-table .table__bottom-right {
   border-bottom-right-radius: 15px;
 }
 
-.exchange-section__currency-table .table__right {
+.exchange-section__currency-table .table__right,
+.exchange-section__commissions-table .table__right {
   font-size: 1.4rem;
   font-weight: normal;
   color: var(--font-grey);
+}
+
+.exchange-section__commissions-table .table__right {
+  text-align: center;
+  padding-left: 0;
+}
+
+.exchange-section > .currency-date,
+.exchange-section > .commissions-date {
+  width: 60%;
+  max-width: 400px;
+  margin: 0 auto 30px;
+  padding: 5px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.exchange-section > .currency-date {
+  background-color: var(--soft-orange);
+}
+
+.exchange-section > .commissions-date {
+  background-color: var(--secondary-blue);
 }
