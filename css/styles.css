@@ -139,3 +139,17 @@ main {
   line-height: 1.8rem;
   color: #757575;
 }
+
+.exchange-section__currency-table span {
+  display: inline-block;
+  width: 13px;
+  height: 10px;
+  margin-left: 10px;
+  background-image: url("../assets/icons/trending-down.svg");
+  background-repeat: no-repeat;
+}
+
+.exchange-section__currency-table table,
+.currency-table__title {
+  text-align: left;
+}
