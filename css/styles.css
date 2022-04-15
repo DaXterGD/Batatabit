@@ -9,6 +9,7 @@
   --off-white: #faf8f7;
   --just-white: #fff;
   --font-grey: #757575;
+  --card-text: #808080;
 }
 
 * {
@@ -23,7 +24,7 @@ html {
 
 body {
   font-family: "DM Sans", sans-serif;
-  font-size: 1.6rem;
+  /* font-size: 1.6rem; */
   min-width: 320px;
   background-color: var(--just-white);
   overscroll-behavior: none;
@@ -266,7 +267,7 @@ main {
   left: calc(50% - 25px);
   width: 50px;
   height: 30px;
-  background-image: url('../assets/icons/batata.svg');
+  background-image: url("../assets/icons/batata.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -287,5 +288,54 @@ main {
   margin-bottom: 20px;
   font-size: 1.4rem;
   line-height: 1.8rem;
-  color: #808080;
+  color: var(--card-text);
+}
+
+.products-detail__cards .card {
+  width: 90%;
+  max-width: 500px;
+  height: 170px;
+  margin: 0 auto 15px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px #00000029;
+  background-color: var(--black);
+}
+
+.card > .icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card > .clock {
+  background-image: url("../assets/icons/clock.svg");
+}
+
+.card > .eye {
+  background-image: url("../assets/icons/eye.svg");
+}
+
+.card > .dollar-sign {
+  background-image: url("../assets/icons/dollar-sign.svg");
+}
+
+.card > .check-circle {
+  background-image: url("../assets/icons/check-circle.svg");
+}
+
+.card__title {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+}
+
+.card__body {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--card-text);
 }
