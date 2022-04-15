@@ -19,6 +19,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 62.5%;
 }
 
@@ -26,9 +27,8 @@ body {
   font-family: "DM Sans", sans-serif;
   font-size: 1.6rem;
   min-width: 320px;
-  background-color: var(--just-white);
+  color: var(--black);
   overscroll-behavior: none;
-  scroll-behavior: smooth;
 }
 
 header {
@@ -361,3 +361,23 @@ main {
   color: var(--just-white);
 }
 
+.main__plans {
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.plans__text {
+  width: 90%; 
+  margin: 0 auto 50px;
+}
+
+.plans__text > h2 {
+  padding-top: 50px;
+  font-size: 2.4rem;
+}
+
+.plans__text > p {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  color: var(--font-grey);
+}
