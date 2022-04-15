@@ -24,7 +24,7 @@ html {
 
 body {
   font-family: "DM Sans", sans-serif;
-  /* font-size: 1.6rem; */
+  font-size: 1.6rem;
   min-width: 320px;
   background-color: var(--just-white);
   overscroll-behavior: none;
@@ -294,12 +294,16 @@ main {
 .products-detail__cards .card {
   width: 90%;
   max-width: 500px;
-  height: 170px;
+  min-height: 150px;
   margin: 0 auto 15px;
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0 4px 8px #00000029;
   background-color: var(--black);
+}
+
+.products-detail__cards .card:last-child {
+  margin-bottom: 0;
 }
 
 .card > .icon {
@@ -338,4 +342,19 @@ main {
   font-size: 1.4rem;
   line-height: 1.8rem;
   color: var(--card-text);
+}
+
+.main__hero {
+  height: 50vh;
+  background-image: url('../assets/img/bitcoinbaby2x.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.main__hero h2 {
+  text-align: center;
+  padding-top: 65px;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  color: var(--just-white);
 }
