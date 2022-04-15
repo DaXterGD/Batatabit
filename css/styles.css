@@ -202,7 +202,7 @@ main {
   width: 50%;
   padding-left: 15px;
   background-color: var(--just-white);
-  color: var(--grey);
+  color: var(--font-grey);
 }
 
 .exchange__currency-table .table__top-left,
@@ -232,7 +232,8 @@ main {
   color: var(--font-grey);
 }
 
-.exchange__commissions-table .table__right {
+.exchange__commissions-table .table__right,
+.exchange__currency-table .table__right {
   text-align: center;
   padding-left: 0;
 }
@@ -380,4 +381,16 @@ main {
   padding-top: 30px;
   font-size: 1.4rem;
   color: var(--font-grey);
+}
+
+.slider__card {
+  position: relative;
+  width: 70%;
+  max-width: 300px;
+  height: 250px;
+  margin: 50px auto 0;
+  padding: 0 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px #00000029;
+  background-color: var(--just-white);
 }
