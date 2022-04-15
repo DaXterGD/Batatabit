@@ -394,3 +394,35 @@ main {
   box-shadow: 0 4px 8px #00000029;
   background-color: var(--just-white);
 }
+
+.slider__card > .card__recommended {
+  position: absolute;
+  top: calc(0% - 15px);
+  left: calc(50% - 60px);
+  width: 120px;
+  height: 30px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  line-height: 30px;
+  background-color: var(--bitcoin-orange);
+  color: var(--just-white);
+}
+
+.card__info > .title {
+  padding-top: 30px;
+  font-size: 1.4rem;
+}
+
+.card__info > .price {
+  font-size: 5.3rem;
+  font-weight: bold;
+}
+
+.card__info sup {
+  font-size: 1.8rem;
+}
+
+.card__info > .saving {
+  font-size: 1.4rem;
+  color: var(--font-grey);
+}
