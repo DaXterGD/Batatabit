@@ -100,6 +100,8 @@ header > img {
 @media (hover: hover) {
   .header__button:hover {
     background-color: var(--soft-orange);
+    transform: scale(1.05);
+    transition: 0.5s;
   }
 }
 
@@ -358,3 +360,4 @@ main {
   line-height: 2.6rem;
   color: var(--just-white);
 }
+
