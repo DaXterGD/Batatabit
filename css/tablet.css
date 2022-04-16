@@ -1,0 +1,25 @@
+.products-detail__cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.products-detail__cards > .card {
+  margin: 0;
+  width: 45%;
+  min-height: 170px;
+}
+
+.main__hero {
+  height: 60vh;
+}
+
+.exchange {
+  justify-content: space-around;
+}
+
+.plans__slider {
+  gap: 50px;
+  padding: 0 50px 50px;
+}

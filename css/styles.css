@@ -123,6 +123,24 @@ main {
   padding-top: 60px;
 }
 
+.exchange {
+  display: flex;
+  /* justify-content: space-around; */
+  gap: 100px;
+  padding: 0 100px 50px;
+  overflow: auto;
+  scroll-snap-type: x proximity;
+}
+
+.exchange::-webkit-scrollbar {
+  background-color: var(--soft-orange);
+  height: 5px;
+}
+
+.exchange::-webkit-scrollbar-thumb {
+  background-color: var(--bitcoin-orange);
+}
+
 .exchange__background {
   width: 200px;
   height: 200px;
@@ -130,7 +148,7 @@ main {
   background-image: url("../assets/img/Bitcoin.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 100% cover;
+  background-size: 100% 100%;
 }
 
 .exchange__text {
@@ -194,10 +212,11 @@ main {
 
 .exchange__currency-table,
 .exchange__commissions-table {
-  width: 70%;
-  max-width: 500px;
-  margin: 0 auto;
+  min-width: 230px;
+  /* max-width: 500px; */
+  /* margin: 0 auto 30px; */
   font-family: "Inter", sans-serif;
+  scroll-snap-align: center;
 }
 
 .exchange__currency-table table,
@@ -247,27 +266,27 @@ main {
   padding-left: 0;
 }
 
-.exchange > .currency-date,
-.exchange > .commissions-date {
-  width: 60%;
+.exchange .currency-date,
+.exchange .commissions-date {
+  width: 80%;
   max-width: 400px;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   padding: 5px;
   font-size: 1.2rem;
   border-radius: 5px;
 }
 
-.exchange > .currency-date {
+.exchange .currency-date {
   background-color: var(--soft-orange);
 }
 
-.exchange > .commissions-date {
+.exchange .commissions-date {
   background-color: var(--secondary-blue);
 }
 
 .main__product-detail {
   position: relative;
-  padding: 20px 10px;
+  padding: 30px 10px;
   background-color: var(--warm-black);
   color: var(--just-white);
 }
@@ -303,7 +322,7 @@ main {
   color: var(--card-text);
 }
 
-.products-detail__cards .card {
+.products-detail__cards > .card {
   width: 90%;
   max-width: 500px;
   min-height: 150px;
@@ -361,6 +380,7 @@ main {
   background-image: url("../assets/img/bitcoinbaby2x.png");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .main__hero h2 {
@@ -413,7 +433,7 @@ main {
   position: relative;
   scroll-snap-align: center;
   min-width: 230px;
-  max-width: 300px;
+  max-width: 280px;
   min-height: 270px;
   margin: 50px auto 0;
   padding: 0 15px 20px;
