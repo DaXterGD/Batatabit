@@ -387,12 +387,17 @@ main {
   position: relative;
   width: 70%;
   max-width: 300px;
-  height: 250px;
+  min-height: 240px;
   margin: 50px auto 0;
-  padding: 0 15px;
+  padding: 0 15px 20px;
   border-radius: 15px;
   box-shadow: 0 4px 8px #00000029;
   background-color: var(--just-white);
+}
+
+.slider__card:last-child {
+  background-color: var(--black);
+  color: var(--just-white);
 }
 
 .slider__card > .card__recommended {
@@ -404,8 +409,19 @@ main {
   border-radius: 8px;
   font-size: 1.2rem;
   line-height: 30px;
-  background-color: var(--bitcoin-orange);
   color: var(--just-white);
+}
+
+.slider__card > .year {
+  background-color: var(--bitcoin-orange);
+}
+
+.slider__card > .month {
+  background-color: var(--secondary-blue);
+}
+
+.slider__card > .unlimited {
+  background-color: var(--warm-black);
 }
 
 .card__info > .title {
@@ -425,4 +441,45 @@ main {
 .card__info > .saving {
   font-size: 1.4rem;
   color: var(--font-grey);
+}
+
+.card__info > .unlimited-saving {
+  color: var(--just-white);
+}
+
+.card__info > button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 150px;
+  height: 48px;
+  margin: 20px auto 0;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.card__info > .year-button {
+  border: 2px solid var(--bitcoin-orange);
+  background-color: var(--soft-orange);
+}
+
+.card__info > .month-button {
+  border: 2px solid var(--secondary-blue);
+  background-color: var(--soft-blue);
+}
+
+.card__info > .unlimited-button {
+  border: 2px solid var(--bitcoin-orange);
+  background-color: inherit;
+  color: var(--just-white);
+}
+
+.card__info span {
+  width: 20px;
+  height: 20px;
+  background-image: url("../assets/icons/orange-right-arrow.svg");
+  background-position: center;
 }
