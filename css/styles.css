@@ -23,6 +23,15 @@ html {
   font-size: 62.5%;
 }
 
+html::-webkit-scrollbar {
+  background-color: var(--soft-orange);
+  width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--bitcoin-orange);
+}
+
 body {
   font-family: "DM Sans", sans-serif;
   font-size: 1.6rem;
@@ -363,7 +372,7 @@ main {
 }
 
 .main__plans {
-  padding-bottom: 70px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -383,11 +392,29 @@ main {
   color: var(--font-grey);
 }
 
+.plans__slider {
+  display: flex;
+  gap: 20px;
+  padding: 0 50px 20px;
+  overflow: auto;
+  scroll-snap-type: x proximity;
+}
+
+.plans__slider::-webkit-scrollbar {
+  background-color: var(--soft-orange);
+  height: 5px;
+}
+
+.plans__slider::-webkit-scrollbar-thumb {
+  background-color: var(--bitcoin-orange);
+}
+
 .slider__card {
   position: relative;
-  width: 70%;
+  scroll-snap-align: center;
+  min-width: 230px;
   max-width: 300px;
-  min-height: 240px;
+  min-height: 270px;
   margin: 50px auto 0;
   padding: 0 15px 20px;
   border-radius: 15px;
@@ -439,6 +466,7 @@ main {
 }
 
 .card__info > .saving {
+  margin-bottom: 20px;
   font-size: 1.4rem;
   color: var(--font-grey);
 }
@@ -448,6 +476,9 @@ main {
 }
 
 .card__info > button {
+  position: absolute;
+  bottom: calc(0% + 20px);
+  left: calc(50% - 75px);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
