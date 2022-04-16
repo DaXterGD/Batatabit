@@ -349,7 +349,7 @@ main {
 
 .main__hero {
   height: 50vh;
-  background-image: url('../assets/img/bitcoinbaby2x.png');
+  background-image: url("../assets/img/bitcoinbaby2x.png");
   background-size: cover;
   background-position: center;
 }
@@ -368,7 +368,7 @@ main {
 }
 
 .plans__text {
-  width: 90%; 
+  width: 90%;
   margin: 0 auto 50px;
 }
 
@@ -482,4 +482,8 @@ main {
   height: 20px;
   background-image: url("../assets/icons/orange-right-arrow.svg");
   background-position: center;
+}
+
+.month-button > span {
+  background-image: url("../assets/icons/blue-right-arrow.svg");
 }
